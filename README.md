@@ -224,10 +224,13 @@ online-transactions-analytics/
 
 ## 📬 Contact
 
-If you have any questions or feedback, feel free to connect!
+Feel free to reach out for feedback, collaboration, or opportunities:
+
+- 💼 LinkedIn: https://www.linkedin.com/in/hemanraj-mani
+- 📧 Email: hemanrajmani@gmail.com  
 
 ---
 
 ## ⭐ If you like this project
 
-Give it a ⭐ on GitHub — it helps others discover it!
+Give it a ⭐ on GitHub!
