@@ -9,9 +9,9 @@ An end-to-end data analytics project that transforms raw online retail transacti
 
 ## 📊 Dashboard Preview
 
-![Overview](main/screenshots/Overview.PNG)
-![Revenue Analysis](main/screenshots/Revenue_analysis.PNG)
-![Customer Segmentation](main/screenshots/RFM_analysis.PNG)
+![Overview](screenshots/Overview.PNG)
+![Revenue Analysis](screenshots/Revenue_analysis.PNG)
+![Customer Segmentation](screenshots/RFM_analysis.PNG)
 
 ---
 
