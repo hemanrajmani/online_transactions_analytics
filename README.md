@@ -1,239 +1,226 @@
-**Project: Online Retail Analytics Dashboard (Using Power BI + SQL +
-Python)**
+# 📊 Online Retail Analytics Dashboard
 
-------------------------------------------------------------------------
+An end-to-end data analytics project that transforms raw online retail transaction data into actionable business insights using **Python, SQL, and Power BI**.
 
-**Project Overview:**
+🔹 **Focus Areas:** Revenue Trends | Customer Segmentation (RFM) | Product Performance | Cancellation Analysis
+🔹 **Outcome:** Interactive dashboard enabling data-driven decision making
 
-This project analyzes online retail transaction data to uncover key
-business insights related to revenue, customer behavior, product
-performance, and order cancellations.
+---
 
-The solution follows a complete data pipeline approach:
+## 📊 Dashboard Preview
 
-  - Data extraction from external source (UCI Machine Learning Repository)
+> *(Replace the image paths with your actual screenshots)*
 
-  - Data cleaning using Python
+![Overview](screenshots/overview.png)
+![Revenue Analysis](screenshots/revenue_analysis.png)
+![Customer Segmentation](screenshots/rfm_analysis.png)
 
-  - Data modeling using SQL
+---
 
-  - Interactive dashboard creation using Power BI
+## ❓ Problem Statement
 
-------------------------------------------------------------------------
+Businesses often struggle to extract meaningful insights from raw transactional data, making it difficult to understand:
 
-**Objectives**
+* Customer behavior
+* Revenue patterns
+* Product performance
+* Order cancellations
 
-  - Analyze revenue trends (YoY, QoQ, MoM)
+This project solves these challenges by building a complete analytics pipeline and an interactive dashboard for business decision-making.
 
-  - Identify top-performing products and countries
+---
 
-  - Detect peak sales periods (hour/day/month)
+## 🎯 Objectives
 
-  - Perform customer segmentation using RFM analysis
+* Analyze revenue trends (YoY, QoQ, MoM)
+* Identify top-performing products and regions
+* Detect peak sales periods (hour/day/month)
+* Perform customer segmentation using **RFM analysis**
+* Analyze order cancellations and identify risk factors
+* Enable dynamic, filter-driven insights
 
-  - Analyze order cancellations and identify risk factors
+---
 
-  - Build dynamic, filter-driven business insights
+## 🛠️ Tech Stack
 
-------------------------------------------------------------------------
+| Tool     | Purpose                        |
+| -------- | ------------------------------ |
+| Python   | Data cleaning & preprocessing  |
+| SQL      | Data modeling & transformation |
+| Power BI | Data visualization & dashboard |
+| DAX      | Dynamic measures & insights    |
+| Excel    | Raw data source                |
 
-**Tech Stack**
+---
 
-| **Tool**       | **Purpose**                    |
-|----------------|--------------------------------|
-| Python         | Data cleaning & preprocessing  |
-| SQL            | Data modeling & transformation |
-| Power BI       | Data visualization & dashboard |
-| DAX            | Dynamic measures & insights    |
-| Excel/Web Data | Raw data source                |
+## 🔄 Data Pipeline
 
-------------------------------------------------------------------------
+### 1️⃣ Data Extraction
 
-**Data Pipeline**
+* Dataset sourced from online retail transactions (web dataset)
 
-  ***1. Data Extraction***
+---
 
-  - Data sourced from online retail dataset (web source)
+### 2️⃣ Data Cleaning (Python)
 
-------------------------------------------------------------------------
+* Handled missing values
+* Converted date formats
+* Removed duplicates
+* Prepared structured dataset
 
-  ***2. Data Cleaning (Python)***
+📄 File: `python/data_cleaning.ipynb`
 
-  - Handled missing values
+---
 
-  - Converted date formats
+### 3️⃣ Data Modeling (SQL)
 
-  - Removed duplicates
+* Created star schema:
 
-  - Created structured dataset
+  * `fact_sales`
+  * `dim_date`
+  * `dim_products`
+  * `dim_customers`
+* Applied relationships and constraints
 
-  *File: Python_Online Retail Transaction.ipynb*
+📄 File: `sql/schema.sql`
 
-------------------------------------------------------------------------
+---
 
-  ***3. Data Modeling (SQL)***
+### 4️⃣ Data Visualization (Power BI)
 
-  - Created fact and dimension tables:
+* Built interactive dashboards with:
 
-    - fact_sales
+  * KPI cards
+  * Trend analysis
+  * Heatmaps
+  * RFM segmentation
+  * Cancellation insights
 
-    - dim_date
+📄 File: `powerbi/dashboard.pbix`
 
-    - dim_products
+---
 
-    - dim_customers
+## 📊 Dashboard Pages
 
-  - Applied relationships and constraints
+### 1. 📌 Metrics Overview
 
-  *File: SQL_Online Retail Transaction.sql*
+* Revenue, Orders, Quantity KPIs
+* YoY, QoQ, MoM comparison
+* Country & category filters
 
-------------------------------------------------------------------------
+---
 
-***4. Data Visualization (Power BI)***
+### 2. 📈 Revenue Analysis
 
-  - Built interactive dashboards with:
+* Monthly revenue trends
+* Revenue by country
+* Weekday vs weekend comparison
 
-    - KPI cards
+---
 
-    - Trend analysis
+### 3. 📦 Product Analysis
 
-    - Heatmaps
+* Top-selling products
+* Sales trends
+* Product performance by region
 
-    - RFM segmentation
+---
 
-    - Cancellation analysis
+### 4. ⏱️ Peak Period Analysis
 
-------------------------------------------------------------------------
+* Hourly and weekly heatmaps
+* Identifies peak demand periods
 
-**Dashboard Pages**
+---
 
-  ***1. Metrics Overview***
+### 5. 👥 RFM Analysis
 
-  - Revenue, Orders, Quantity KPIs
+* Customer segmentation:
 
-  - YoY, QoQ, MoM comparison
+  * Champions
+  * Loyal Customers
+  * At Risk
+* Recency, Frequency, Monetary insights
 
-  - Country & category filters
+---
 
-------------------------------------------------------------------------
+### 6. ❌ Cancelled Orders Analysis
 
-  ***2. Revenue Analysis***
+* Cancellation rate & volume
+* Monthly trends
+* Product & country-level analysis
+* Business-driven insights
 
-  - Monthly revenue trends
+---
 
-  - Revenue by country
+## 📈 Key Business Insights
 
-  - Weekday vs weekend comparison
+* Revenue peaks during **Q4**, indicating strong seasonal demand
+* A small number of products drive the majority of revenue (**Pareto effect**)
+* Peak sales occur during **mid-day hours**
+* “Champion” customers contribute significantly to total revenue
+* A notable number of **at-risk customers** identified
+* Cancellation trends indicate potential issues in:
 
-------------------------------------------------------------------------
+  * Product quality
+  * Pricing strategy
+  * Delivery performance
 
-  ***3. Product Analysis***
+---
 
-  - Top-selling products
+## ⚙️ Advanced Techniques
 
-  - Sales trends
+* Time Intelligence (YoY, MoM, QoQ)
+* RFM Customer Segmentation
+* Dynamic DAX Measures (`CALCULATE`, `RANKX`, `TOPN`)
+* Context-aware filtering with slicers
+* Heatmap visualization for demand analysis
+* Dynamic text-based insight generation
 
-  - Product performance by region
+---
 
-------------------------------------------------------------------------
+## 🚀 How to Use
 
-  ***4. Peak Period Analysis***
+1. Open the `.pbix` file in **Power BI Desktop**
+2. Use slicers (Year, Country, Product) to filter data
+3. Navigate across dashboard pages
+4. Hover over visuals for detailed insights
+5. Analyze KPIs and identify business trends
 
-  - Heatmaps for:
+---
 
-    - Hourly sales
+## 📁 Project Structure
 
-    - Weekly trends
+```
+online-transactions-analytics/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── python/
+├── sql/
+├── powerbi/
+│   ├── dashboard.pbix
+│   └── screenshots/
+├── docs/
+└── README.md
+```
 
-  - Identifies peak demand periods
+---
 
-------------------------------------------------------------------------
+## 📌 Notes
 
-  ***5. RFM Analysis***
+* Power BI file is included for full interaction
+* Screenshots are provided for quick preview
+* Dataset used is for learning and analysis purposes
 
-  - Customer segmentation:
+---
 
-    - Champions
+## 📬 Contact
 
-    - At Risk
+If you have any questions or feedback, feel free to connect!
 
-    - Loyal Customers
+---
 
-  - Recency, Frequency, Monetary insights
+## ⭐ If you like this project
 
-------------------------------------------------------------------------
-
-  ***6. Cancelled Orders Analysis***
-
-  - Cancellation rate & volume
-
-  - Monthly cancellation trends
-
-  - Cancellation by product & country
-
-  - Dynamic insights for business actions
-
-------------------------------------------------------------------------
-
-**Key Business Insights**
-
-  - Revenue shows seasonal spikes, especially in Q4
-
-  - A smart product contributes majority of revenue
-
-  - Peak sales occur during mid-day hours
-
-  - High-value customers (Champions) drive most revenue
-
-  - Significant number of at-risk customers identified
-
-  - Cancellation rate highlights potential issues in Product quality,
-  Pricing strategy, Delivery performance
-
-------------------------------------------------------------------------
-
-**Dynamic Features**
-
-  - Fully interactive filters:
-
-    - Year, Month, Country, Product
-
-  - Dynamic DAX-based insights
-
-  - Context-aware calculations (auto-adjust with slicers)
-
-  - Drill-through and tooltip enhancements
-
-------------------------------------------------------------------------
-
-**Advanced Techniques Used**
-
-  - DAX:
-
-    - AGGREGATED DAX, CALCULATE, TOPN, SUMMARIZE, DIVIDE, RANKX,
-    REMOVEFILTERS, DISTINCT, ALL, SELECTEDVALUE, SWITCH, IF and DATE &
-    TIME DAX
-
-  - Dynamic insight generation using text measures
-
-  - RFM segmentation logic
-
-  - Time intelligence (YoY, MoM)
-
-  - Heatmap visualization for peak analysis
-
-------------------------------------------------------------------------
-
-**How to Use**
-
-<!-- -->
-
-  1.  Open the .pbix file in Power BI
-
-  2.  Use slicers to filter data
-
-  3.  Navigate across dashboard pages
-
-  4.  Hover over visuals for detailed insights
-
-  5.  Review dynamic insight panels
+Give it a ⭐ on GitHub — it helps others discover it!
