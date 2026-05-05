@@ -9,11 +9,9 @@ An end-to-end data analytics project that transforms raw online retail transacti
 
 ## 📊 Dashboard Preview
 
-> *(Replace the image paths with your actual screenshots)*
-
-![Overview](screenshots/Overview.png)
-![Revenue Analysis](screenshots/Revenue_analysis.png)
-![Customer Segmentation](screenshots/RFM_analysis.png)
+![Overview](main/screenshots/Overview.PNG)
+![Revenue Analysis](main/screenshots/Revenue_analysis.PNG)
+![Customer Segmentation](main/screenshots/RFM_analysis.PNG)
 
 ---
 
@@ -196,12 +194,17 @@ online-transactions-analytics/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── python/
-├── sql/
 ├── powerbi/
-│   ├── dashboard.pbix
-│   └── screenshots/
-├── docs/
+│   ├── Preview.pdf
+│   └── dashboard.pdf
+│   └── dashboard.pbix
+├── python/
+│   ├── data_clean.py
+│   └── online_retail_transactions.ipynb
+├── sql/
+│   ├── schema.sql
+│   └── analysis_query.sql
+├── screenshots/
 └── README.md
 ```
 
