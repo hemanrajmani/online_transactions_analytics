@@ -11,9 +11,9 @@ An end-to-end data analytics project that transforms raw online retail transacti
 
 > *(Replace the image paths with your actual screenshots)*
 
-![Overview](screenshots/overview.png)
-![Revenue Analysis](screenshots/revenue_analysis.png)
-![Customer Segmentation](screenshots/rfm_analysis.png)
+![Overview](screenshots/Overview.png)
+![Revenue Analysis](screenshots/Revenue_analysis.png)
+![Customer Segmentation](screenshots/RFM_analysis.png)
 
 ---
 
