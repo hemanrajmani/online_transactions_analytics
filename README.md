@@ -70,7 +70,7 @@ This project solves these challenges by building a complete analytics pipeline a
 * Removed duplicates
 * Prepared structured dataset
 
-📄 File: `python/data_cleaning.ipynb`
+📄 File: `python/Online_retail_transaction.ipynb`
 
 ---
 
@@ -80,9 +80,10 @@ This project solves these challenges by building a complete analytics pipeline a
 
   * `fact_sales`
   * `dim_date`
+  * `dim_time`
   * `dim_products`
   * `dim_customers`
-* Applied relationships and constraints
+  * Applied relationships and constraints
 
 📄 File: `sql/schema.sql`
 
@@ -98,7 +99,7 @@ This project solves these challenges by building a complete analytics pipeline a
   * RFM segmentation
   * Cancellation insights
 
-📄 File: `powerbi/dashboard.pbix`
+📄 File: `powerbi/Dashboard_online_transaction_PBI.pbix`
 
 ---
 
@@ -199,11 +200,11 @@ online-transactions-analytics/
 │   ├── raw/
 │   └── processed/
 ├── powerbi/
-│   ├── Preview.pdf
-│   └── dashboard.pdf
-│   └── dashboard.pbix
+│   ├── dashboard_preview.pdf
+│   └── dashboard_online_transactions.pdf
+│   └── dashboard_online_transaxtions.pbix
 ├── python/
-│   ├── data_clean.py
+│   ├── data_clean_script.py
 │   └── online_retail_transactions.ipynb
 ├── sql/
 │   ├── schema.sql
